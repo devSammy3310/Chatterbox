@@ -11,7 +11,8 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 
-mongoose.connect("mongodb://localhost:27017/userDB");
+mongoose.connect("mongodb+srv://bakaresopefoluwa:Mosope3310@cluster0.xazorra.mongodb.net/userDB");
+
 const Schema = mongoose.Schema;
 const userSchema = new Schema ({
     email: String,
